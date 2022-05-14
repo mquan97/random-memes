@@ -46,26 +46,28 @@ const Main = () => {
     return ( 
         <div className='main'>
             <div className='form'>
-                <input 
+                <input
+                    className='input'
                     type='text'
                     placeholder='Top Text'
                     name='topText'
                     value={memes.topText}
                     onChange={handleUpdateText}
                 />
-                <input 
+                <input
+                    className='input'
                     type='text'
                     placeholder='Bottom Text'
                     name='bottomText'
                     value={memes.bottomText}
                     onChange={handleUpdateText}
                 />
-                <button onClick={randomMemeImage}>Random Meme</button>
+                <button className='image--button' onClick={randomMemeImage}>Random Meme</button>
             </div>
-            <div className='meme-image'>
-                <h2>{memes.topText}</h2>
-                <h2>{memes.bottomText}</h2>
-                <img src={memes.memeImage} alt='meme' />
+            <div className='image--meme--container'>
+                <h2 className='text top--text'>{memes.topText}</h2>
+                <h2 className='text bottom--text'>{memes.bottomText}</h2>
+                <img className='img--meme' src={memes.memeImage} alt='meme' />
             </div>
         </div>
     );
