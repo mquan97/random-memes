@@ -30,12 +30,69 @@ body {
 /* MAIN */
 
 .main {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  max-height: 100%;
+  padding: 30px;
 }
 
-.main--picture--area {
-  margin-right: auto;
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: rgb(34,193,195);
+  text-indent: 10px;
+}
+
+.image--button {
+  grid-column: 1 / -1;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 5px;
+  background: rgb(34,193,195);
+  background: linear-gradient(113deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 68%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.image--meme--container {
+  position: relative;
+}
+
+.img--meme {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    2px 0 0 #000,
+    -2px 0 0 #000,
+    0 2px 0 #000,
+    0 -2px 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom--text {
+  bottom: 0;
 }
